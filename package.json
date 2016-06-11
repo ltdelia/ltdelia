@@ -1,0 +1,24 @@
+{
+  "name": "ltdelia",
+  "version": "1.0.0",
+  "description": "Portfolio website for Louis T. Delia (me).",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ltdelia/ltdelia.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ltdelia/ltdelia/issues"
+  },
+  "homepage": "https://github.com/ltdelia/ltdelia#readme",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4"
+  }
+}
