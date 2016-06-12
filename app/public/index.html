@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="theme-color" content="#2196F3">
 
 	<title>Louis T. Delia | Full Stack Developer</title>
 	
@@ -10,37 +13,263 @@
 	
 	<!-- Style.css -->
 	<link rel="stylesheet" href="static/assets/css/style.css">
+    <!-- CSS  -->
+    <link href="min/plugin-min.css" type="text/css" rel="stylesheet">
+    <link href="min/custom-min.css" type="text/css" rel="stylesheet" >
 	<!-- Compiled and minified CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
 	
 	<!-- jQuery -->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
-	<!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
 	<!-- Compiled and minified JavaScript -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
 		
 </head>
-<body>
+<body id="top" class="scrollspy">
 
-	<!-- Page Content -->
-	<div class="container">
-		<div class="row">
-			<div class="col s4">
-				<img class="responsive-img" id="me" src="static/assets/images/ltdelia.jpg">
-			</div>
-			<div class="col s8 blue indexbox">
-				<h2 class="center-align">Louis T. Delia</h2>
-				<h4 class="center-align">Full Stack Developer</h4>
-				<div class="row">
-					<a href="/portfolio"><button type="button" id="learn" class="btn waves-effect waves-light blue darken-1 left">Learn More</button></a>
-				</div>	
+<!-- Pre Loader -->
+<div id="loader-wrapper">
+    <div id="loader"></div>
+ 
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+ 
+</div>
 
+	<!-- Site navigation -->	
+	<nav>
+		<div class="nav-wrapper blue">
+			<a href="/" class="brand-logo" id="myLogo">Louis T. Delia</a>
+			<!-- activate side-bav in mobile view -->
+			<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+			<ul class="right hide-on-med-and-down">
+				<li><a href="#about">About</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+			<!-- navbar for mobile -->
+			<ul class="side-nav" id="mobile-demo">
+				<li><a href="#about">About</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+		</div>
+	</nav>
+	
+	<!--Parallax-->
+	<div class="parallax-container">
+
+		<div id="banner">
+		  	<div class="wrap-center">
+				<div class="banner-centered" id="banner-text">
+					<h2>Full Stack Web Developer</h2>
+					<a href="#about" type="button" class="btn waves-effect waves-light">Learn More</a>
+				</div>
 			</div>
 		</div>
 	</div>
+
+	<!--Intro and service-->
+	<div id="about" class="section scrollspy">
+	    <div class="container">
+	        <div class="row">
+
+	            <div  class="col s12 m4 l4">
+	                <div class="center promo promo-example">
+						<p>I am drawn to the intersection between people and technology, which has sparked my interest in Web Development. As a Full Stack Web Developer, I build beautiful, functional web applications by leveraging clean and understandable code with server structure and database management. With every application, I exercise my passions for creativity and learning new technologies. </p>
+						<p>Possessing five years of experience across Broadcast Media, Music, and Publishing industries. Seeking opportunities in the Media/Entertainment, Marketing, or Non-Profit sectors, where I can combine server-side code with elegant User Interface Design.</p>
+	                </div>
+	            </div>
+	            <div class="col s12 m4 l4">
+	                <div class="center promo promo-example">
+						<h4 class="center-align">About Me</h4>
+						<img class="responsive-img" id="me" src="static/assets/images/ltdelia.jpg">
+	                </div>
+	            </div>
+	            <div class="col s12 m4 l4">
+	                <div class="center promo promo-example">
+						<h4 class="center-align">Specialties Include:</h4>
+						<ul class="center-align">
+							<li>HTML5/CSS3</li>
+							<li>JavaScript</li>
+							<li>jQuery</li>
+							<li>Node.js</li>
+							<li>Express</li>
+							<li>Bootstrap</li>
+							<li>Materialize</li>
+							<li>MySQL</li>
+							<li>MongoDB</li>
+							<li>React.js</li>
+						</ul>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+<!--Work-->
+<div class="section scrollspy" id="portfolio">
+    <div class="container">
+        <h2 class="header text_b text-center">Work </h2>
+        <div class="row">
+            <div class="col s12 m4 l4">
+				<div class="card">
+				    <div class="card-image waves-effect waves-block waves-light">
+				      <img class="activator" src="static/assets/images/collectTheForce.png">
+				    </div>
+				    <div class="card-content">
+				      <span class="card-title activator grey-text text-darken-4">Collect The Force<i class="material-icons right">more_vert</i></span>
+				      <p><a href="http://collecttheforce.herokuapp.com">See Here</a></p>
+				    </div>
+				    <div class="card-reveal">
+				      <span class="card-title grey-text text-darken-4">Collect The Force<i class="material-icons right">close</i></span>
+				      <p>Web Game Incorporating Bootstrap, JavaScript, and jQuery</p>
+				      <p><a href="https://github.com/ltdelia/StarWarsCollectTheForce">Github</a></p>
+				    </div>
+				</div>
+            </div>
+            <div class="col s12 m4 l4">
+				  <div class="card">
+				    <div class="card-image waves-effect waves-block waves-light">
+				      <img class="activator" src="static/assets/images/sixtiesTrivia.png">
+				    </div>
+				    <div class="card-content">
+				      <span class="card-title activator grey-text text-darken-4">Sixties Trivia<i class="material-icons right">more_vert</i></span>
+				      <p><a href="http://musictrivia60s.herokuapp.com">See Here</a></p>
+				    </div>
+				    <div class="card-reveal">
+				      <span class="card-title grey-text text-darken-4">Sixties Trivia<i class="material-icons right">close</i></span>
+				      <p>Trivia Game using Bootstrap, JavaScript Timers, jQuery</p>
+				      <p><a href="https://github.com/ltdelia/TriviaGame">Github</a></p>
+				    </div>
+				  </div>
+            </div>
+            <div class="col s12 m4 l4">
+				  <div class="card">
+				    <div class="card-image waves-effect waves-block waves-light">
+				      <img class="activator" src="static/assets/images/marvelTastic.png">
+				    </div>
+				    <div class="card-content">
+				      <span class="card-title activator grey-text text-darken-4">marvelTastic<i class="material-icons right">more_vert</i></span>
+				      <p><a href="http://marveltastic.herokuapp.com/">See Here</a></p>
+				    </div>
+				    <div class="card-reveal">
+				      <span class="card-title grey-text text-darken-4">marvelTastic<i class="material-icons right">close</i></span>
+				      <p>GIF viewer incorporating the Giphy API, Bootstrap, JavaScript, and jQuery</p>
+				      <p><a href="https://github.com/ltdelia/marvelTASTIC">Github</a></p>
+				    </div>
+				  </div>
+            </div>
+            <div class="col s12 m4 l4">
+				  <div class="card">
+				    <div class="card-image waves-effect waves-block waves-light">
+				      <img class="activator" src="static/assets/images/m3Watch.png">
+				    </div>
+				    <div class="card-content">
+				      <span class="card-title activator grey-text text-darken-4">M3Watch<i class="material-icons right">more_vert</i></span>
+				      <p><a href="http://m3-watch.herokuapp.com">See Here</a></p>
+				    </div>
+				    <div class="card-reveal">
+				      <span class="card-title grey-text text-darken-4">M3Watch<i class="material-icons right">close</i></span>
+				      <p>Get financial information about any company. Incorporates The New York Times API, Yahoo! Finance API, and Materialize CSS framework.</p>
+				      <p><a href="https://github.com/lijasminej/m3-watch">Github</a></p>
+				    </div>
+				  </div>
+            </div>
+            <div class="col s12 m4 l4">
+				  <div class="card">
+				    <div class="card-image waves-effect waves-block waves-light">
+				      <img class="activator" src="static/assets/images/programmedToLove.png">
+				    </div>
+				    <div class="card-content">
+				      <span class="card-title activator grey-text text-darken-4">programmedToLove<i class="material-icons right">more_vert</i></span>
+				      <p><a href="http://programmedtolove.herokuapp.com">See Here</a></p>
+				    </div>
+				    <div class="card-reveal">
+				      <span class="card-title grey-text text-darken-4">programmedToLove<i class="material-icons right">close</i></span>
+				      <p>Dating application for developers. Incorporates User Authentication with Github, MySQL database, and Materialize and Bootstrap CSS frameworks.</p>
+				      <p><a href="https://github.com/StevoStabs/programmedtolove">Github</a></p>
+				    </div>
+				  </div>
+            </div>
+            <div class="col s12 m4 l4">
+				  <div class="card">
+				    <div class="card-image waves-effect waves-block waves-light">
+				      <img class="activator" src="static/assets/images/artistDiscog.png">
+				    </div>
+				    <div class="card-content">
+				      <span class="card-title activator grey-text text-darken-4">ArtistDiscog<i class="material-icons right">more_vert</i></span>
+				      <p><a href="http://artistdiscog.herokuapp.com">See Here</a></p>
+				    </div>
+				    <div class="card-reveal">
+				      <span class="card-title grey-text text-darken-4">ArtistDiscog<i class="material-icons right">close</i></span>
+				      <p>Web scraping app to comment on the discography of artist Randy Newman. Uses MongoDB, Cheerio, MongoJS, Mongoose, Express.</p>
+				      <p><a href="https://github.com/ltdelia/artistDiscog">Github</a></p>
+				    </div>
+				  </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer id="contact" class="page-footer blue scrollspy">
+    <div class="container">  
+        <div class="row">
+            <div class="col l6 s12">
+                <form class="col s12" action="contact.php" method="post">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <i class="mdi-action-account-circle prefix white-text"></i>
+                            <input id="icon_prefix" name="name" type="text" class="validate white-text">
+                            <label for="icon_prefix" class="white-text">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <i class="mdi-communication-email prefix white-text"></i>
+                            <input id="icon_email" name="email" type="email" class="validate white-text">
+                            <label for="icon_email" class="white-text">Email</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="mdi-editor-mode-edit prefix white-text"></i>
+                            <textarea id="icon_prefix2" name="message" class="materialize-textarea white-text"></textarea>
+                            <label for="icon_prefix2" class="white-text">Message</label>
+                        </div>
+                        <div class="col offset-s7 s5">
+                            <button class="btn waves-effect waves-light blue darken-1" type="submit">Submit
+                                <i class="mdi-content-send right white-text"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col l6 s12">
+                <h5 class="white-text">Connect With Me</h5>
+                <ul>
+                    <li>
+                        <a class="white-text" href="https://github.com/ltdelia">
+                            <i class="small fa fa-github-square white-text"></i> Github
+                        </a>
+                    </li>
+                    <li>
+                        <a class="white-text" href="https://www.linkedin.com/in/ltdelia">
+                            <i class="small fa fa-linkedin-square white-text"></i> Linkedin
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright blue darken-2">
+        <div class="container">
+        	© 2016 Louis T. Delia.
+            Theme by <a class="white-text" href="http://joashpereira.com">Joash Pereira</a>. Thanks to <a class="white-text" href="http://materializecss.com/">materializecss</a>
+        </div>
+    </div>
+</footer>
+	<script src="static/assets/js/script/js"></script>
+    <script src="static/assets/js/plugin-min.js"></script>
+    <script src="static/assets/js/custom-min.js"></script>
 
 </body>
 </html>
