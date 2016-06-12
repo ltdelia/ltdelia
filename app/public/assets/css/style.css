@@ -9,6 +9,10 @@
 	margin-top: 150px;
 }
 
+.skills{
+	width:100%;
+}
+
 .socialimg{
 	width:75px;
 	height:75px;
@@ -17,8 +21,13 @@
 	margin-right:35px;
 }
 
+.about{
+	margin-top:130px;
+}
+
 #me{
 	margin-top:15px;
+	width:100%;
 }
 
 #banner {

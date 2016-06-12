@@ -37,26 +37,23 @@
  
 </div>
 
-	<!-- Site navigation -->	
-	<nav>
-		<div class="nav-wrapper blue">
-			<a href="/" class="brand-logo" id="myLogo">Louis T. Delia</a>
-			<!-- activate side-bav in mobile view -->
-			<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-			<ul class="right hide-on-med-and-down">
-				<li><a href="#about">About</a></li>
-				<li><a href="#portfolio">Portfolio</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-			<!-- navbar for mobile -->
-			<ul class="side-nav" id="mobile-demo">
-				<li><a href="#about">About</a></li>
-				<li><a href="#portfolio">Portfolio</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-		</div>
-	</nav>
+	<!-- Site navigation -->
+	<div class="navbar-fixed">	
+		<nav>
+			<div class="nav-wrapper blue">
+				<a href="/" class="brand-logo" id="myLogo">Louis T. Delia</a>
+				<!-- activate side-bav in mobile view -->
+				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="#about">About</a></li>
+					<li><a href="#skills">Skills</a></li>				
+					<li><a href="#portfolio">Work</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+			</div>
+		</nav>
+	</div>
 	
 	<!--Parallax-->
 	<div class="parallax-container">
@@ -65,49 +62,114 @@
 		  	<div class="wrap-center">
 				<div class="banner-centered" id="banner-text">
 					<h2>Full Stack Web Developer</h2>
-					<a href="#about" type="button" class="btn waves-effect waves-light">Learn More</a>
+					<a href="#about" type="button" class="btn waves-effect waves-light blue darken-1">Learn More</a>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<!--Intro and service-->
+	<!--About Me-->
 	<div id="about" class="section scrollspy">
-	    <div class="container">
+	    <div class="container">        
+	    		<h2 class="header text_b center-align">About Me</h2>
 	        <div class="row">
-
-	            <div  class="col s12 m4 l4">
-	                <div class="center promo promo-example">
+				
+	            <div  class="col s12 m6 l6">
+	                <div class="about center promo promo-example">
 						<p>I am drawn to the intersection between people and technology, which has sparked my interest in Web Development. As a Full Stack Web Developer, I build beautiful, functional web applications by leveraging clean and understandable code with server structure and database management. With every application, I exercise my passions for creativity and learning new technologies. </p>
 						<p>Possessing five years of experience across Broadcast Media, Music, and Publishing industries. Seeking opportunities in the Media/Entertainment, Marketing, or Non-Profit sectors, where I can combine server-side code with elegant User Interface Design.</p>
 	                </div>
 	            </div>
-	            <div class="col s12 m4 l4">
+	            <div class="col s12 m6 l6">
 	                <div class="center promo promo-example">
-						<h4 class="center-align">About Me</h4>
 						<img class="responsive-img" id="me" src="static/assets/images/ltdelia.jpg">
-	                </div>
-	            </div>
-	            <div class="col s12 m4 l4">
-	                <div class="center promo promo-example">
-						<h4 class="center-align">Specialties Include:</h4>
-						<ul class="center-align">
-							<li>HTML5/CSS3</li>
-							<li>JavaScript</li>
-							<li>jQuery</li>
-							<li>Node.js</li>
-							<li>Express</li>
-							<li>Bootstrap</li>
-							<li>Materialize</li>
-							<li>MySQL</li>
-							<li>MongoDB</li>
-							<li>React.js</li>
-						</ul>
 	                </div>
 	            </div>
 	        </div>
 	    </div>
 	</div>
+
+	<!--Skills-->
+	<div class="section scrollspy" id="skills">
+		<div class="container">
+			<h2 class="header text_b center-align">Skills</h2>
+				<div class="row">
+					<div class="col s12 m2 l2">
+			                <div class="center promo promo-example">
+								<ul class="center-align">
+									<li>
+										<img class="skills responsive-img" src="static/assets/images/html5.png">
+									</li>
+									<li>Experienced in HTML5 for structuring web applications.</li>
+									<li><img class="skills responsive-img" src="static/assets/images/css3.png"></li>
+									<li>Experienced in CSS3 for DOM styling.</li>
+								</ul>
+			                </div>
+			        </div>
+					<div class="col s12 m2 l2">
+			                <div class="center promo promo-example">
+								<ul class="center-align">
+									<li>
+										<img class="skills responsive-img" src="static/assets/images/javascript.png">
+									</li>
+									<li>Experienced in JavaScript for DOM manipulation</li>
+									<li><img class="skills responsive-img" src="static/assets/images/jquery.jpg"></li>
+									<li>Experienced in jQuery for traversing and manipulating the DOM.</li>
+								</ul>
+			                </div>
+			        </div>
+					<div class="col s12 m2 l2">
+			                <div class="center promo promo-example">
+								<ul class="center-align">
+									<li>
+										<img class="skills responsive-img" src="static/assets/images/nodejs.png">
+									</li>
+									<li>Experienced in Node.js for building server-side applications.</li>
+									<li><img class="skills responsive-img" src="static/assets/images/express.png"></li>
+									<li>Experienced in Express.js for application routing.</li>
+								</ul>
+			                </div>
+			        </div>
+					<div class="col s12 m2 l2">
+			                <div class="center promo promo-example">
+								<ul class="center-align">
+									<li>
+										<img class="skills responsive-img" src="static/assets/images/bootstrap.png">
+									</li>
+									<li>Experienced in Twitter Bootstrap CSS for DOM styling.</li>
+									<li><img class="skills responsive-img" src="static/assets/images/Materialize.png"></li>
+									<li>Experienced in Materialize CSS for DOM styling.</li>
+								</ul>
+			                </div>
+			        </div>	
+					<div class="col s12 m2 l2">
+			                <div class="center promo promo-example">
+								<ul class="center-align">
+									<li>
+										<img class="skills responsive-img" src="static/assets/images/git.png">
+									</li>
+									<li>Experienced in Git Bash as a Command Line Interfance, for version control.</li>
+									<li><img class="skills responsive-img" src="static/assets/images/reactjs.png"></li>
+									<li>Familiar with React.js for component-based web applications.</li>
+								</ul>
+			                </div>
+			        </div>
+					<div class="col s12 m2 l2">
+			                <div class="center promo promo-example">
+								<ul class="center-align">
+									<li>
+										<img class="skills responsive-img" src="static/assets/images/mysql.jpg">
+									</li>
+									<li>Experienced with MySQL for relational database creation and management.</li>
+									<li><img class="skills responsive-img" src="static/assets/images/mongo-db-logo.png"></li>
+									<li>Experienced with MongoDB for document database creation and management.</li>
+								</ul>
+			                </div>
+			        </div>
+			    </div>
+		</div>
+	</div>
+
 
 <!--Work-->
 <div class="section scrollspy" id="portfolio">
@@ -218,12 +280,13 @@
     <div class="container">  
         <div class="row">
             <div class="col l6 s12">
+                <h5 class="white-text">Contact Me</h5>
                 <form class="col s12" action="contact.php" method="post">
                     <div class="row">
                         <div class="input-field col s6">
                             <i class="mdi-action-account-circle prefix white-text"></i>
                             <input id="icon_prefix" name="name" type="text" class="validate white-text">
-                            <label for="icon_prefix" class="white-text">First Name</label>
+                            <label for="icon_prefix" class="white-text">Name</label>
                         </div>
                         <div class="input-field col s6">
                             <i class="mdi-communication-email prefix white-text"></i>
