@@ -50,7 +50,7 @@
 
 .banner-centered {
 	text-align: center;
-	position: absolute;
+	position: relative;
 	display: block;
 	max-width: 75.231em;
 	height: inherit;
