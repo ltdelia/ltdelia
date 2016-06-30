@@ -3,11 +3,15 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var path = require('path');
+var logger = require('morgan');
 
 // Configuring Express
 
 var app = express();
 var PORT = process.env.PORT || 80;
+
+// Logging Requests with Morgan
+app.use(logger('dev'));
 
 // BodyParser makes it easy for our server to interpret data sent to it.
 app.use(bodyParser.json());
