@@ -1,31 +1,10 @@
+/*Site navigation*/
+
 #myLogo{
 	margin-left: 50px;
 }
-#learn{
-	margin-left: 250px;
-}
 
-.indexbox{
-	margin-top: 150px;
-}
-
-.skills{
-	width:100%;
-}
-
-.socialimg{
-	width:75px;
-	height:75px;
-	padding:5px;
-	margin-left:35px;
-	margin-right:35px;
-}
-
-#me{
-	margin-top:15px;
-	width:100%;
-}
-
+/*Parallax - Banner*/
 #banner {
   margin-bottom: 50px;
 	overflow: hidden;
@@ -66,4 +45,25 @@
 	color: #fafafa;
 	font-weight: 100;
 	display: block;
+}
+
+/*About Me*/
+
+#me{
+	margin-top:15px;
+	width:100%;
+}
+
+/*Floating for About Me -- Tablets and Desktop*/
+@media only screen and (min-width: 559px){
+	#me{
+		float:right;
+		width: 50%;
+	}
+}
+
+/*Skills*/
+
+.skills{
+	width:100%;
 }
